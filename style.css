@@ -658,7 +658,7 @@ body {
     }
 
     .two_11 img {
-        width: 80%;
+        width: 60%;
     }
 
     .two_11 p {
@@ -666,8 +666,8 @@ body {
     }
 
     button {
-        padding: 10px 15px;
-        font-size: 0.85rem;
+        padding: 6px 12px;
+        font-size: 0.70rem;
     }
 }
 
@@ -678,7 +678,7 @@ body {
     }
 
     .two_11 img {
-        width: 90%;
+        width: 70%;
     }
 
     .two_11 p {
@@ -686,8 +686,8 @@ body {
     }
 
     button {
-        padding: 8px 12px;
-        font-size: 0.75rem;
+        padding: 5px 9px;
+        font-size: 0.65rem;
     }
 }
 
@@ -805,26 +805,33 @@ justify-content: center;
 @media (max-width: 425px) {
   .three h1 {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   .three_2 img {
     width: 70%;
+    justify-content: center;
   }
 
   .three_23,
   .three_24,
   .three_25 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .three_22 {
     font-size: 1.2rem;
+  }
+
+  .three_22 p{
+    text-align: justify;
   }
 }
 
 @media (max-width: 320px) {
   .three h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .three_2 img {
@@ -834,12 +841,16 @@ justify-content: center;
   .three_23,
   .three_24,
   .three_25 {
-    font-size: 1rem;
-    padding: 8px;
+    font-size: 0.8rem;
+    padding: 6px;
   }
 
   .three_22 {
     font-size: 1rem;
+  }
+
+  .three_22 p{
+    text-align: justify;
   }
 }
 
@@ -1046,39 +1057,126 @@ justify-content: center;
     }
 }
 
-.six{
+.six {
     display: flex;
-    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
     background-color: #fdfdfd;
     margin: 20px;
-    padding: 20px;
+    padding: 60px 80px;
 }
 
-.six img{
-    width: 100%;
-    height: auto;    
+.six_1 {
+    flex: 1;
 }
 
-.six h2{
+.six_1 h2 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    color: #7200c9;
     text-align: left;
-    font-size: 2rem;
-    color: #7200c9;
 }
 
-.six p{
+.six_1 p {
     font-size: 1rem;
     color: #7200c9;
     font-weight: lighter;
-    line-height: 2.5rem;
+    line-height: 1.6;
 }
 
-.six li{
-    list-style: dot;
+.six_1 ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.six_1 li {
+    list-style-type: disc;
     font-size: 1rem;
     color: #7200c9;
     font-weight: lighter;
-    line-height: 2.5rem;
+    margin-bottom: 10px;
 }
+
+.six_2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.six_2 img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .six {
+        padding: 50px 40px;
+        gap: 30px;
+    }
+
+    .six_1 h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .six {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .six_1 ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    .six_2 img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .six {
+        padding: 30px 20px;
+    }
+
+    .six_1 h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .six_1 p,
+    .six_1 li {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    .six_2 img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .six_1 h2 {
+        font-size: 1.4rem;
+        text-align: center;
+
+    }
+
+    .six_1 p,
+    .six_1 li {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .six {
+        padding: 25px 15px;
+    }
+}
+
 
 .seven{
     display: flex;
@@ -1190,6 +1288,7 @@ justify-content: center;
 @media (max-width: 425px) {
     .seven h2 {
         font-size: 2.2rem;
+        text-align: center;
     }
 
     .seven img {
@@ -1224,6 +1323,7 @@ justify-content: center;
 @media (max-width: 320px) {
     .seven h2 {
         font-size: 1.8rem;
+        text-align: center;
     }
 
     .seven img {
@@ -1433,7 +1533,7 @@ justify-content: center;
     }
 
     .quote {
-        font-size: 0.75rem;
+        font-size: 0.75rem;    
     }
 }
 
@@ -1557,6 +1657,10 @@ justify-content: center;
         padding: 15px;
     }
 
+    .nine p{
+        text-align: center;
+    }
+
     .nine_11,
     .nine_12,
     .nine_21,
@@ -1571,11 +1675,11 @@ justify-content: center;
     }
 
     .nine_3 {
-        gap: 10px;
+        gap: 5px;
     }
 
     .nine_3 img {
-        width: 55%;
+        width: 50%;
     }
 }
 
@@ -1584,13 +1688,17 @@ justify-content: center;
         gap: 25px;
     }
 
+    .nine p{
+        text-align: center;
+    }
+
     .nine_11 img,
     .nine_21 img {
         width: 28%;
     }
 
     .nine_3 img {
-        width: 70%;
+        width: 60%;
     }
 
     .nine_1 p,
@@ -1896,6 +2004,11 @@ justify-content: center;
         width: 60%;
     }
 
+    .foot_11{
+        justify-content: center;
+        align-items: center;
+    }
+
     .footer h3 {
         font-size: 0.9rem;
     }
@@ -1912,6 +2025,11 @@ justify-content: center;
 @media (max-width: 320px) {
     .footer {
         padding: 20px;
+    }
+
+     .foot_11{
+        justify-content: center;
+        align-items: center;
     }
 
     .footer h3 {

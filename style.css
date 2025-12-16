@@ -226,23 +226,19 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;  
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
-        gap: 10px; 
+       justify-content: center;  
+        margin: 15px;
+        padding: 5px;
     }
 
-
     .head img {
-        width: 120px;
-        height: 30px;
+        width: 80px;
+        height: auto;
     }
     .head_21 ul {
         gap: 8px;
     }
     .dropbtn {
-        padding: 6px 15px;
         font-size: 13px;
     }
     .head_31 a {
@@ -256,10 +252,17 @@ body {
 
     .dropdown img {
     width:15px;
-    height: 15px;
+    height: auto;
 }
+
+ .dropdown a{
+    font-size: 12px;
+    margin-right: 10px;
+ }
   
-    
+ .head_3{
+    margin-right: 75px;
+ }   
 }
 
 @media (max-width: 320px) {
@@ -267,16 +270,14 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;  
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
-        gap: 10px; 
+       justify-content: center;  
+        margin: 15px;
+        padding: 5px;
     }
 
     .head img {
-        width: 70px;
-        height: 18px;
+        width: 40px;
+        height: 10px;
     }
     .head_21 ul {
         gap: 5px;
@@ -286,8 +287,8 @@ body {
         font-size: 12px;
     }
     .head_31 a {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 3px 8px;
+        font-size: 8px;
     }
 
     .head_21 li {
@@ -452,6 +453,11 @@ body {
     }
     .one_3 img {
         width: 100px;
+    }
+
+    .one_5 h3{
+        text-align: justify;
+        font-size: 1rem;
     }
 }
 
@@ -651,7 +657,6 @@ body {
     }
 }
 
-/* --- 480px (Mobile phones) --- */
 @media (max-width: 480px) {
     .two_21 h3 {
         font-size: 1.3rem;
@@ -661,17 +666,22 @@ body {
         width: 60%;
     }
 
+    .two_21{
+        margin: 10px;
+        padding: 10px;
+    }
+
     .two_11 p {
         font-size: 0.85rem;
     }
 
     button {
-        padding: 6px 12px;
-        font-size: 0.70rem;
+        padding: 9px 15px;
+        font-size: 0.7rem;
     }
 }
 
-/* --- 320px (Small devices) --- */
+
 @media (max-width: 320px) {
     .two_21 h3 {
         font-size: 1.1rem;
@@ -811,6 +821,7 @@ justify-content: center;
   .three_2 img {
     width: 70%;
     justify-content: center;
+    align-items: center;
   }
 
   .three_23,
@@ -820,7 +831,9 @@ justify-content: center;
   }
 
   .three_22 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 10px;
   }
 
   .three_22 p{
@@ -836,6 +849,8 @@ justify-content: center;
 
   .three_2 img {
     width: 80%;
+    justify-content: center;
+    align-items: center;
   }
 
   .three_23,
@@ -851,6 +866,8 @@ justify-content: center;
 
   .three_22 p{
     text-align: justify;
+    padding: 5px;
+    margin: 10px;
   }
 }
 
